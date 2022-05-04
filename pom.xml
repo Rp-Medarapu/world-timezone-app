@@ -38,6 +38,7 @@
 						<applicationName>world-timezone-app</applicationName>
 						<password>Test-rp-1</password>
 						<muleVersion>4.4.0</muleVersion>
+						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
