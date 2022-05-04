@@ -35,7 +35,7 @@
 						<environment>Sandbox</environment>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
-						<appicationaName>world-timezone-app</appicationaName>
+						<appicationName>world-timezone-app</appicationName>
 						<password>Test-rp-1</password>
 						<muleVersion>4.4.0</muleVersion>
 					</cloudHubDeployment>
