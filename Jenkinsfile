@@ -3,12 +3,16 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'mvn clean install'
+            	withMaven(maven:'maven'){
+                	bat 'mvn -f world-demo-api/pom.xml clean install'
+                }
             }
         }
         stage('deploy') {
             steps {
-                bat 'mvn package deploy -DmuleDeploy'
+            	withMaven(maven:'maven'){
+                	bat 'mvn -f world-demo-api/pom.xml package deploy -DmuleDeploy'
+                }
             }
         }
     }
